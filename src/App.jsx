@@ -9,6 +9,7 @@ import Sidebar from './components/Sidebar'; // Sidebar
 import './assets/App.css'; // Importa tu CSS
 import Header from './components/Header';
 import Footer from './components/Footer';
+import Relaciones from './views/Relaciones';
 
 
 
@@ -28,6 +29,7 @@ const App = () => {
               <Route path="/tutorial" element={<Tutorial />} />
               <Route path="/" element={<Dashboard />} />
               <Route path="/data-dictionary" element={<DataDictionary />} />
+              <Route path="/relaciones" element={<Relaciones />} />
               <Route path="*" element={<NotFound />} /> {/* Ruta para manejar 404 */}
             </Routes>
           </section>
