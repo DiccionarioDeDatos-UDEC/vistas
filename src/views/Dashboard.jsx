@@ -5,22 +5,20 @@ import axios from 'axios';
 function Dashboard() {
   const [statistics, setStatistics] = useState({
     tablesCount: 0,
-    totalDmlOperations: 0,
-    totalDdlCommands: 0,
     error: null,
   });
 
   useEffect(() => {
     const fetchStatistics = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/dml_ddl/estadisticas');
+        const response = await axios.get('http://localhost:5000/estadisticas');
         
-        // Verifica si la respuesta contiene la estructura esperada
+        // Mostrar la estructura de la respuesta en la consola
+        console.log('Response data:', response.data);
+
         if (response.data && response.data.estadisticas) {
           setStatistics({
             tablesCount: response.data.estadisticas.total_tablas || 0,
-            totalDmlOperations: response.data.estadisticas.total_dml_operations || 0, // Ajustado a la clave correcta
-            totalDdlCommands: response.data.estadisticas.total_ddl_commands || 0, // Ajustado a la clave correcta
             error: null,
           });
         } else {
@@ -44,11 +42,10 @@ function Dashboard() {
       {statistics.error && <p className="error-message">{statistics.error}</p>}
       <div className="card-container">
         <Card title="Tablas Definidas" content={`${statistics.tablesCount} Tablas`} />
-        <Card title="Operaciones DDL" content={`${statistics.totalDdlCommands} Comandos DDL ejecutados`} />
-        <Card title="Operaciones DML" content={`${statistics.totalDmlOperations} Comandos DML ejecutados`} />
       </div>
     </div>
   );
 }
 
 export default Dashboard;
+
