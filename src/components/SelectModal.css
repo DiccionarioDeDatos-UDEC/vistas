@@ -7,7 +7,7 @@
   max-width: 90%; /* Ancho máximo flexible */
   width: 300px; /* Puedes mantener el ancho fijo si lo prefieres */
   max-height: 80%; /* Altura máxima para evitar que se salga de la pantalla */
-  padding: 20px;
+  padding: 20px;/* AlonDur */
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
@@ -24,7 +24,7 @@
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente */
     display: flex;
-    align-items: center;
+    align-items: center;/* AlonDur */
     justify-content: center;
   }
   
@@ -60,7 +60,7 @@
 .close-button {
     background-color: #000000; /* color del botón */
     color: white;
-    border: none;
+    border: none;/* AlonDur */
     max-width: 200px;
     padding: 10px; /* Aumentar el padding para mejor clic */
     cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
