@@ -29,13 +29,18 @@ input[type="text"], input[type="number"], select {
 }
 
 .header {
-  background-color: #ffffff; 
   color: rgb(255, 255, 255);
   padding: 10px;
   text-align: center;
   display: flex;
   align-items: center;
 }
+.header {
+  display: flex;          /* Usar flexbox para centrar */
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center;    /* Centrar verticalmente */
+  background-color: #007B3E; 
+  }
 
 .header-logo {
   width: 55px; /* Aumenta el tamaño de la imagen */
@@ -168,13 +173,7 @@ flex-direction: column;
 height: 100vh; /* Toda la altura de la pantalla */
 }
 
-.header {
-display: flex;          /* Usar flexbox para centrar */
-justify-content: center; /* Centrar horizontalmente */
-align-items: center;    /* Centrar verticalmente */
-height: 50px;           /* Altura del header (ajusta según sea necesario) */
-background-color: #007B3E; 
-}
+
 .header h1 {
 margin: 0;  
 color: rgb(255, 255, 255);           
