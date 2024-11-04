@@ -10,26 +10,26 @@ body {
 .main-content {
   display: flex;
 }
-
+/* AlonDur*/
 .content {
-  max-height: 500px; /* Limita la altura del contenido */
+  max-height: 500px; 
   overflow-y: auto;  /* Habilita el scroll vertical si el contenido excede la altura */
   padding: 10px;     /* Espaciado interno */
-  border: 1px solid #ccc; /* Para visualizar los bordes (opcional) */
+  border: 1px solid #ccc; 
 }
 input[type="text"], input[type="number"], select {
   width: 100%; /* Ocupará el 100% del ancho de su contenedor */
-  max-width: 300px; /* Limitar el ancho máximo de los inputs */
-  padding: 10px; /* Espaciado interno */
-  border: 1px solid #ccc; /* Borde del input */
+  max-width: 300px; 
+  padding: 10px; 
+  border: 1px solid #ccc; 
   border-radius: 4px; /* Bordes redondeados */
-  font-size: 16px; /* Tamaño de fuente */
+  font-size: 16px; 
   margin-bottom: 10px; /* Espacio entre inputs */
   box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
 }
 
 .header {
-  background-color: #ffffff; /* color de donde */
+  background-color: #ffffff; 
   color: rgb(255, 255, 255);
   padding: 10px;
   text-align: center;
@@ -40,7 +40,7 @@ input[type="text"], input[type="number"], select {
   padding: 20px;
   width: 200px;
 }
-
+/* AlonDur*/
 .sidebar ul {
   list-style-type: none;
   padding: 0;
@@ -89,7 +89,7 @@ input[type="text"], input[type="number"], select {
   color: white;
   border-radius: 4px;
 }  
-
+/* AlonDur*/
 .link-relaciones a {
   background-color: rgb(255, 255, 255);
   color: white;
@@ -136,21 +136,21 @@ text-align: left;
   margin-bottom: 40px;
 }
 
-button {
-  background-color: #000000; /* color del boton enviar */
+button {    /*  boton enviar */
+  background-color: #000000; 
   color: white;
   border: none;
   max-width: 200px;
   margin-bottom: 10px;
   padding: 5px;
 }
-/* Asegúrate de que toda la pantalla esté cubierta */
+
 html, body, #root {
 height: 100%;
 margin: 0;
 padding: 0;
 }
-
+/* AlonDur*/
 /* Layout general */
 .layout {
 display: flex;
@@ -163,11 +163,11 @@ display: flex;          /* Usar flexbox para centrar */
 justify-content: center; /* Centrar horizontalmente */
 align-items: center;    /* Centrar verticalmente */
 height: 50px;           /* Altura del header (ajusta según sea necesario) */
-background-color: #007B3E; /* Color de fondo (opcional) */
+background-color: #007B3E; 
 }
 .header h1 {
 margin: 0;  
-color: rgb(255, 255, 255);           /* Eliminar margen por defecto del h1 */
+color: rgb(255, 255, 255);           
 }
 
 .main {
@@ -199,7 +199,7 @@ padding: 30px;
 height: 420px
 }
 .sidebar ul li {
-margin-bottom: 0px; /* Ajusta el espacio entre los elementos de la lista */
+margin-bottom: 0px;
 }
 
 .sidebar ul li a {
@@ -210,15 +210,15 @@ font-size: 20px;
 }
 
 .footer {
-background-color: #000000; /* Color de fondo */
+background-color: #000000; 
 text-align: center; /* Centra el texto */
 padding: 10px; /* Espaciado alrededor del texto */
-position: fixed; /* Fija el footer en la parte inferior */
+position: fixed; 
 left: 0;
 bottom: 0;
 width: 100%; /* Abarca todo el ancho de la ventana */
 font-size: 14px; /* Tamaño de fuente */
-color: #ffffff; /* Color del texto */
+color: #ffffff; 
 }
 
 .footer p {
